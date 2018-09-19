@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MySite.master.cs" Inherits="WebApplication1.MySite" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style type =" text/css">
+        body{
+            font-family: Verdana,Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 18pt;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="headContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="bodyContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+   <asp:ContentPlaceHolder ID="bodyScriptContent" runat="server">
+            </asp:ContentPlaceHolder>
+</body>
+</html>
